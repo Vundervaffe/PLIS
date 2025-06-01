@@ -370,4 +370,9 @@ graph TD
   B --> E[PLA]
   B --> F[PAL]
 ```
-![image](https://github.com/user-attachments/assets/4baff76a-dc33-46a6-add2-22403765e1be)
+| Уровень      | Типы          |
+|--------------|---------------|
+| **ПЛИС**     |               |
+| ├─ SPLD      | PLA, PAL      |
+| ├─ CPLD      |               |
+| └─ FPGA      |               |
