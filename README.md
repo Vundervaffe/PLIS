@@ -434,11 +434,18 @@ FPGA
 - Цепи переноса(Carry Chain)
 - Регистры(DFF)
 - Набор мультиплексоров(MUX)
-![image](https://github.com/user-attachments/assets/7cb31e49-4647-4170-9ab0-cb4f1f3ccbdf)
-У LUT есть есть логический режим работы:
+![image](https://github.com/user-attachments/assets/7cb31e49-4647-4170-9ab0-cb4f1f3ccbdf)  
+Логический режим работы:
 - Пара LUT3 и мультиплексор "d" используются как LUT4
 - Путь следования данных не затрагивают цепь переноса
-![image](https://github.com/user-attachments/assets/7859b297-c193-4816-a65c-279b14362186)
+![image](https://github.com/user-attachments/assets/d78cead8-cdcc-4894-970c-b0062195d510)  
+Арифметический Режим работы Logic Cell:
+- Каждый LUT3 независимо формирует входной сигнал для полного сумматора
+- Пусть следование данных проходит через цепи переноса
+    - учитывается carry in
+    - формируется carry out
+- входной сигнал "d" не используется
+![image](https://github.com/user-attachments/assets/bb6a525b-35d2-444b-a38f-83c7680a4756)
 
 ## Конечный автомат (finite state machine, FSM)
 Конечный автомат (finite state machine) – это абстракция, описывающая систему, которая имеет вход, выход, и конечное число внутренних состояний, а также функции переходов между состояниями. можно описать в виде графа переходв
